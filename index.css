@@ -14,7 +14,7 @@ h1:first-child
 
 .content
 {
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -33,4 +33,5 @@ h1:first-child
 .book-description
 {
     padding: 10px;
+    width: 200px;
 }
