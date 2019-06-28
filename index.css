@@ -43,14 +43,11 @@ h1:first-child
     display: inline-block;
     margin: 0 auto;
     text-align: center;
-    width: 33%;
+    width: 32%;
     cursor: pointer;
     height: 50px;   
-    /* vertical-align: middle; */
-    /* font-size: 23px; */
 }
 
 .clicked, .menu div:hover {
-    /* background-color: gray; */
     border-bottom: 1px gray solid;
 }
