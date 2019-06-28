@@ -3,57 +3,67 @@
         <meta charset="utf-8">
         <title>books.arkhipenko.me</title>
         <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="index.js"></script>
     </head>
     <body>
-        <h1>Books catalog</h1>
         <div class="content">
-            <hr/>
-            <h1>In progress</h1>
-            <div class="book">
-                <img class="book-image" src="images/Fsharp3_0.png"/>
-                <div class="book-description">
-                    <div class="book-author">Chris Smith</div>
-                    <div class="book-age">O’Reilly Media - 2012</div>
-                    <div class="book-link">
-                            Link : <a href="https://www.amazon.com/Programming-3-0-Comprehensive-Writing-Problems/dp/1449320295/" target="_blank">amazon.com</a>
-                    </div>
-                    <div class="book-page">Progress : 220/474 </div>
-                </div>
+            <h1>Books</h1>
+            <div class="menu">
+                <div id="tab-inProcess"><h3>In progress</h3></div>
+                <div id="tab-toDo"><h3>To do</h3></div>
+                <div id="tab-done"><h3>Done</h3></div>
             </div>
-            <div class="book">
-                <img class="book-image" src="images/architecting-modern-web-applications.png"/>
-                <div class="book-description">
-                    <div class="book-author">Steve Smith</div>
-                    <div class="book-age">Microsoft Corporation - 2019</div>
-                    <div class="book-link">
-                            Link : <a href="https://dotnet.microsoft.com/learn/web/aspnet-architecture" target="_blank">microsoft.com</a>
+            <div class="tabs">
+                <div id="inProcess" class="tab">
+                    <div class="book">
+                        <img class="book-image" src="images/Fsharp3_0.png"/>
+                        <div class="book-description">
+                            <div class="book-author">Chris Smith</div>
+                            <div class="book-age">O’Reilly Media - 2012</div>
+                            <div class="book-link">
+                                    Link : <a href="https://www.amazon.com/Programming-3-0-Comprehensive-Writing-Problems/dp/1449320295/" target="_blank">amazon.com</a>
+                            </div>
+                            <div class="book-page">Progress : 220/474 </div>
+                        </div>
                     </div>
-                    <div class="book-page">Progress : 0/119</div>
-                </div>
-            </div>
-            <div class="book">
-                <img class="book-image" src="images/dotnet-microservices-architecture.png"/>
-                <div class="book-description">
-                    <div class="book-author">Mike Rousos, Bill Wagner</div>
-                    <div class="book-age">Microsoft Corporation - 2019</div>
-                    <div class="book-link">
-                            Link : <a href="https://dotnet.microsoft.com/learn/web/microservices-architecture" target="_blank">microsoft.com</a>
+                    <div class="book">
+                        <img class="book-image" src="images/architecting-modern-web-applications.png"/>
+                        <div class="book-description">
+                            <div class="book-author">Steve Smith</div>
+                            <div class="book-age">Microsoft Corporation - 2019</div>
+                            <div class="book-link">
+                                    Link : <a href="https://dotnet.microsoft.com/learn/web/aspnet-architecture" target="_blank">microsoft.com</a>
+                            </div>
+                            <div class="book-page">Progress : 0/119</div>
+                        </div>
                     </div>
-                    <div class="book-page">Progress : 0/333</div>
-                </div>
-            </div>
-            <hr/>
-            <h1>For future</h1>
-            <div class="book">
-                <img class="book-image" src="images/Fsharp3_0_expret.png"/>
-                <div class="book-description">
-                    <div class="book-author">Don Syme</div>
-                    <div class="book-age">Apress - 2012</div>
-                    <div class="book-link">
-                            Link : <a href="https://www.amazon.com/Expert-3-0-Experts-Voice-Syme/dp/1430246502/" target="_blank">amazon.com</a>
+                    <div class="book">
+                        <img class="book-image" src="images/dotnet-microservices-architecture.png"/>
+                        <div class="book-description">
+                            <div class="book-author">Mike Rousos, Bill Wagner</div>
+                            <div class="book-age">Microsoft Corporation - 2019</div>
+                            <div class="book-link">
+                                    Link : <a href="https://dotnet.microsoft.com/learn/web/microservices-architecture" target="_blank">microsoft.com</a>
+                            </div>
+                            <div class="book-page">Progress : 0/333</div>
+                        </div>
                     </div>
-                    <div class="book-page">Progress : 0/638 </div>
                 </div>
+                <div id="toDo" class="tab">
+                    <div class="book">
+                        <img class="book-image" src="images/Fsharp3_0_expret.png"/>
+                        <div class="book-description">
+                            <div class="book-author">Don Syme</div>
+                            <div class="book-age">Apress - 2012</div>
+                            <div class="book-link">
+                                    Link : <a href="https://www.amazon.com/Expert-3-0-Experts-Voice-Syme/dp/1430246502/" target="_blank">amazon.com</a>
+                            </div>
+                            <div class="book-page">Progress : 0/638 </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="done" class="tab"></div>
             </div>
         </div>
     </body>

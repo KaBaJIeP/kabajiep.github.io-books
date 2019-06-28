@@ -35,3 +35,22 @@ h1:first-child
     padding: 10px;
     width: 200px;
 }
+
+.menu {
+    margin-bottom: 40px;
+}
+.menu div {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    width: 33%;
+    cursor: pointer;
+    height: 50px;   
+    /* vertical-align: middle; */
+    /* font-size: 23px; */
+}
+
+.clicked, .menu div:hover {
+    /* background-color: gray; */
+    border-bottom: 1px gray solid;
+}
