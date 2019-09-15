@@ -105,7 +105,7 @@ function GetAllInPoccessBooks() {
         .WithAge(2012)
         .WithLink("https://www.amazon.com/Programming-3-0-Comprehensive-Writing-Problems/dp/1449320295/")
         .WithTotalPages(474)
-        .WithProgress(315);
+        .WithProgress(347);
     
     const js_book = new Book()
         .WithImage('images/lrg.jpg')
