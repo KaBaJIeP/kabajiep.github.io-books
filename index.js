@@ -107,34 +107,19 @@ function GetAllInPoccessBooks() {
         .WithTotalPages(474)
         .WithProgress(347);
     
-    const js_book = new Book()
-        .WithImage('images/lrg.jpg')
-        .WithAuthor('David Flanagan')
-        .WithPublisher('O’Reilly Media')
-        .WithAge(2011)
-        .WithLink("http://shop.oreilly.com/product/9780596805531.do")
-        .WithTotalPages(1098)
-        .WithProgress(149);
+    
 
-    const sql_book = new Book()
-        .WithImage('images/51aWutP-3oL.jpg')
-        .WithAuthor('Itzik Ben-Gan')
-        .WithPublisher('Microsoft Press')
-        .WithAge(2012)
-        .WithLink("https://www.amazon.com/Training-70-461-Querying-Microsoft-Server/dp/0735666059")
-        .WithTotalPages(752)
-        .WithProgress(459);
+    const fsharp_ddd_book = new Book()
+        .WithImage('images/ddd-f-sharp.jpg')
+        .WithAuthor('Scott Wlaschin')
+        .WithPublisher('Pragmatic Bookshelf')
+        .WithAge(2018)
+        .WithLink("https://www.amazon.com/Domain-Modeling-Made-Functional-Domain-Driven-dp-1680502549/dp/1680502549")
+        .WithTotalPages(312)
+        .WithProgress(90);
 
-    const patterns_book = new Book()
-        .WithImage('images/patterns.jpg')
-        .WithAuthor('Bert Bates, Eric Freeman')
-        .WithPublisher('O’Reilly Media')
-        .WithAge(2009)
-        .WithLink("http://shop.oreilly.com/product/9780596007126.do")
-        .WithTotalPages(688)
-        .WithProgress(0);
-
-    return [fSharp3_book, js_book, sql_book, patterns_book];
+    return [fSharp3_book,
+        fsharp_ddd_book];
 }
 
 function GetAllToDosBooks() {
@@ -174,16 +159,69 @@ function GetAllToDosBooks() {
         .WithTotalPages(86)
         .WithProgress(0);
 
-    const fsharp_ddd_book = new Book()
-        .WithImage('images/ddd-f-sharp.jpg')
-        .WithAuthor('Scott Wlaschin')
-        .WithPublisher('Pragmatic Bookshelf')
+    const designing_distributed_systems = new Book()
+        .WithImage('images/designing-distributed-systems.png')
+        .WithAuthor('Brendan Burns')
+        .WithPublisher('O’Reilly')
         .WithAge(2018)
-        .WithLink("https://www.amazon.com/Domain-Modeling-Made-Functional-Domain-Driven-dp-1680502549/dp/1680502549")
-        .WithTotalPages(312)
+        .WithLink("https://www.amazon.com/Designing-Distributed-Systems-Patterns-Paradigms/dp/1491983647")
+        .WithTotalPages(165)
         .WithProgress(0);
-    
 
-    return [fSharp3_expert_book, architecture_modern_web_app_book, dotnet_microservice_architecture_book, 
-        impact_mapping_book, fsharp_ddd_book];
+    const designing_data_intensive_applications = new Book()
+        .WithImage('images/designing-data-intensive-applications.jpg')
+        .WithAuthor('Martin Kleppmann')
+        .WithPublisher('O’Reilly')
+        .WithAge(2017)
+        .WithLink("https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321")
+        .WithTotalPages(616)
+        .WithProgress(0);
+
+    const js_book = new Book()
+        .WithImage('images/lrg.jpg')
+        .WithAuthor('David Flanagan')
+        .WithPublisher('O’Reilly Media')
+        .WithAge(2011)
+        .WithLink("http://shop.oreilly.com/product/9780596805531.do")
+        .WithTotalPages(1098)
+        .WithProgress(149);
+
+    const sql_book = new Book()
+        .WithImage('images/51aWutP-3oL.jpg')
+        .WithAuthor('Itzik Ben-Gan')
+        .WithPublisher('Microsoft Press')
+        .WithAge(2012)
+        .WithLink("https://www.amazon.com/Training-70-461-Querying-Microsoft-Server/dp/0735666059")
+        .WithTotalPages(752)
+        .WithProgress(459);
+
+    const patterns_book = new Book()
+        .WithImage('images/patterns.jpg')
+        .WithAuthor('Bert Bates, Eric Freeman')
+        .WithPublisher('O’Reilly Media')
+        .WithAge(2009)
+        .WithLink("http://shop.oreilly.com/product/9780596007126.do")
+        .WithTotalPages(688)
+        .WithProgress(0);
+
+    const dive_into_design_patterns = new Book()
+        .WithImage('images/dive-into-design-patterns.png')
+        .WithAuthor('Aleksander Shvets')
+        .WithPublisher('refactoring.guru')
+        .WithAge(2019)
+        .WithLink("https://refactoring.guru/design-patterns/book")
+        .WithTotalPages(410)
+        .WithProgress(0);
+
+    return [
+        fSharp3_expert_book, 
+        architecture_modern_web_app_book, 
+        dotnet_microservice_architecture_book, 
+        impact_mapping_book, 
+        designing_distributed_systems, 
+        designing_data_intensive_applications,
+        js_book, 
+        sql_book, 
+        patterns_book,
+        dive_into_design_patterns];
 }
