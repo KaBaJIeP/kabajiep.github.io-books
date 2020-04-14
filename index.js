@@ -116,7 +116,7 @@ function GetAllInPoccessBooks() {
         .WithAge(2018)
         .WithLink("https://www.amazon.com/Domain-Modeling-Made-Functional-Domain-Driven-dp-1680502549/dp/1680502549")
         .WithTotalPages(312)
-        .WithProgress(90);
+        .WithProgress(103);
 
     return [fSharp3_book,
         fsharp_ddd_book];
